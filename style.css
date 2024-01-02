@@ -1,47 +1,240 @@
-body {
-    background-color: rgb(236, 106, 106);
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Inter&family=Mada&family=Poppins&family=Rubik&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Aclonica', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Mada', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    color: white;
+
+}
+
+body,
+h1,
+p {
     margin: 0;
     padding: 0;
 }
-.nav-bar{
-    height: 8vh;
-}
-.main {
-    padding: 20px;
 
-}
-.search-box input{
+/* style for navbar */
+.navbar {
+    background-color: #212121;
     display: flex;
-    /* justify-content: space-between; */
-    border-bottom-left-radius: 18px;
-    border-top-left-radius: 18px;
+    justify-content: space-evenly;
+    align-items: center;
     width: 100%;
-    height: 30px;
-}
-.search-box {
-    display: flex;
-    justify-content: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-bottom: 1px solid rgb(69, 67, 67);
 }
 
-.nav-bar,
-.nav-left,
-.nav-right,
-.nav-middle {
+.logo {
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    align-items: center;
+    border-bottom: 1px solid rgb(22, 22, 22);
     display: flex;
-    justify-content: space-between;
+}
+
+.search-container img {
+    cursor: pointer;
+}
+
+.search-container {
+    display: flex;
+    justify-content: space-evenly;
     align-items: center;
 }
 
-.nav-middle {
-    width: 35rem;
+.search-div {
+    width: 40vw;
+    display: flex;
+    border-radius: 5px;
+    overflow-x: hidden;
+    margin-inline: 10px;
+    align-items: center;
 }
 
-.profile {
-    width: 32px;
-    height: 32px;
-    background-color: white;
+#search-button {
+    border: 1px solid rgb(72, 69, 69);
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    background-color: #2b2a2a;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.mice :hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#search {
+    border: none;
+    width: 100%;
+    padding: 12px;
+    background-color: black;
+}
+
+.profile-section {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    gap: 0.5rem;
+}
+
+.profile-section img:hover {
+    border-radius: 15px;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+.body-container {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 200px;
+    background-color: #212121;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    width: 180px;
+}
+
+.home-div,
+.library-div,
+.subscription-div {
+    border-bottom: 1px solid rgb(69, 67, 67);
+    margin-bottom: 10px;
+}
+
+.home-div-row-home {
+    padding: 5px;
+    width: 100%;
+    background-color: #303030;
+}
+
+.home-div-row,
+.library-div-row,
+.subscription-div-row,
+.more-from-youtube-div-row,
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
+.more-from-youtube-div h5,
+.subscription-div h5 {
+    margin: 20px;
+    font-family: 'Inter', sans-serif;
+    /* font: weight 400px; */
+}
+
+.subscription-div-row img {
     border-radius: 50%;
 }
-.nav-bar i{
-    font-size: 30px;
+
+
+/* Hero section styles */
+.hero-section {
+    flex: 1;
+    background-color: black;
+    height: 100%;
+}
+
+/* scrollable suggestion div */
+.suggestion-menu {
+    background: color #212122;
+    overflow-x: auto;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    margin-inline-start: 0px 0px;
+}
+
+
+.suggestion-menu::-webkit-scrollbar {
+    /* width: 0.5rem; */
+    display: none;
+}
+
+.menu-btn {
+    width: 5%;
+    background-color: #303030;
+    border: 1px solid rgb(89, 87, 87);
+    border-radius: 20px;
+    margin: 5px;
+    padding: 10px;
+    /* gap: 1rem; */
+    cursor: pointer;
+
+}
+
+.menu-btn:hover {
+    outline: 1px solid rgb(212, 166, 240);
+    box-shadow: 1px 0px #b7f5ee;
+}
+
+
+/* style for video container */
+.video-container {
+    width: calc(100% -150px);
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* gap: 10px 10px; */
+    overflow-x: hidden;
+}
+
+.video {
+    min-height: 250px;
+    /* height:  */
+    object-fit: cover;
+}
+
+.content {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.channel-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.title {
+    width: 60%;
+    height: 40px;
+    overflow: hidden;
+}
+
+.channel-name {
+    font-size: 14px;
+    margin: 2px 0;
+    color: #7a7a7a;
 }

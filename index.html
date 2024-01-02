@@ -1,40 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YouTube-clone</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Youtube-clone</title>
+    <link rel="icon" href="./assets/Youtube_logo.png" type="image/png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <div class="main">
-        <nav class="nav-bar">
-            <div class="nav-left"> 
-                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
-                
+    <!-- basic blueprint -->
+
+    <!-- side bar -->
+    <div class="body-container">
+        <div class="sidebar">
+            <!-- Sidebar content -->
+            <div class="logo">
+                <img src="./assets/hamburger.png" alt="menu">
+                <img src="./assets/Youtube-Logo.png" alt="youtube-logo">
             </div>
-            <div class="nav-middle">
-                <div style="
-                width: 100%;
-            "  class="search-box">
-                    <input id="search-input" style="width: 90%;">
-                    <i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i>
+            <div class="home-div">
+                <div class="home-div-row home-div-row-home">
+                    <img src="./assets/home.png" alt="home">
+                    <p>Home</p>
                 </div>
-                <i class="fas fa-microphone" style="color: #ffffff;"></i>
+                <div class="home-div-row">
+                    <img src="./assets/explore.png" alt="explore">
+                    <p>Explore</p>
+                </div>
+                <div class="home-div-row">
+                    <img src="./assets/subscription.png" alt="subs">
+                    <p>Subscription</p>
+                </div>
+
             </div>
-            <div class="nav-right">
-                <i class="fas fa-video" style="color: #ffffff;"></i>
-                <i class="fas fa-bell" style="color: #ffffff;"></i>
-                <div class="profile"></div>
+            <div class="library-div">
+                <div class="library-div-row">
+                    <img src="./assets/library.png" alt="">
+                    <p>Library</p>
+                </div>
+                <div class="library-div-row">
+                    <img src="./assets/history.png" alt="">
+                    <p>History</p>
+                </div>
+                <div class="library-div-row">
+                    <img src="./assets/your videos.png" alt="">
+                    <p>Your Videos</p>
+                </div>
+                <div class="library-div-row">
+                    <img src="./assets/watch later.png" alt="">
+                    <p>Watch later</p>
+                </div>
+                <div class="library-div-row">
+                    <img src="./assets/liked videos.png" alt="">
+                    <p>Liked Videos</p>
+                </div>
+                <div class="library-div-row">
+                    <img src="./assets/show more.png" alt="">
+                    <p>Show More</p>
+                </div>
+
+            </div>
+            <div class="subscription-div">
+                <h5>SUBSCRIPTIONS</h5>
+                <div class="subscription-div-row">
+                    <img src="./assets/Icon1.jpg" alt="">
+                    <p>James Gouse</p>
+                </div>
+                <div class="subscription-div-row">
+                    <img src="./assets/Icon2.jpg" alt="">
+                    <p>Alien Cooper</p>
+                </div>
+                <div class="subscription-div-row">
+                    <img src="./assets/User-Avatar.jpg" alt="">
+                    <p>Marcus levin</p>
+                </div>
+                <div class="subscription-div-row">
+                    <img src="./assets/User-Avatar1.jpg" alt="">
+                    <p>Jessica lambert</p>
+                </div>
+                <div class="subscription-div-row">
+                    <img src="./assets/User-Avatar2.jpg" alt="">
+                    <p>Anna White</p>
+                </div>
+                <div class="subscription-div-row">
+                    <img src="./assets/Icon2.jpg" alt="">
+                    <p>Shaun Marsh</p>
+                </div>
+                <div class="library-div-row">
+                    <img src="./assets/show more.png" alt="">
+                    <p>Show More</p>
+                </div>
+            </div>
+            <div class="more-from-youtube-div">
+                <h5> MORE FROM YOUTUBE</h5>
+                <div class="more-from-youtube-div-row">
+                    <img src="./assets/yt primium.png" alt="">
+                    <p>Youtube Premium</p>
+                </div>
+                <div class="more-from-youtube-div-row">
+                    <img src="./assets/gaming.png" alt="">
+                    <p>Gaming</p>
+                </div>
+                <div class="more-from-youtube-div-row">
+                    <img src="./assets/live.png" alt="">
+                    <p>Live</p>
+                </div>
             </div>
 
-        </nav>
 
+
+
+        </div>
+        <div class="hero-section">
+            <!-- Hero section  -->
+            <!-- navbar -->
+            <nav class="navbar">
+                <div class="search-container">
+                    <div class="search-div">
+                        <input id="search" type="text" placeholder="Search">
+                        <!-- <img src="./assets/SearchBox-Button.png" alt=""> -->
+                        <button id="search-button">Search</button>
+                    </div>
+                    <div class="mice">
+                        <img src="./assets/mice-icon.png" alt="">
+                    </div>
+                </div>
+
+
+                <div class="profile-section">
+                    <img src="./assets/Create.png" alt="Create">
+                    <img src="./assets/Apps.png" alt="Apps">
+                    <img src="./assets/Notifications.png" alt="Notifications">
+                    <img src="./assets/Profile.png" alt="Profile">
+                </div>
+            </nav>
+            <!-- suggestion categories -->
+            <!-- scrollable suggestion div -->
+            <div class="suggestion-menu">
+                <button class="menu-btn">All</button>
+                <button class="menu-btn">Music</button>
+                <button class="menu-btn">Live</button>
+                <button class="menu-btn">Songs</button>
+                <button class="menu-btn">Game</button>
+                <button class="menu-btn">Vlog</button>
+                <button class="menu-btn">Chat</button>
+                <button class="menu-btn">Mix</button>
+                <button class="menu-btn">Item</button>
+                <button class="menu-btn">Movie</button>
+                <button class="menu-btn">Songs</button>
+                <button class="menu-btn">Live</button>
+                <button class="menu-btn">yt</button>
+                <button class="menu-btn">srk</button>
+                <button class="menu-btn">All</button>
+                <button class="menu-btn">Song</button>
+                <button class="menu-btn">Mix</button>
+                <button class="menu-btn">Live</button>
+                <button class="menu-btn">KK</button>
+                <button class="menu-btn">YoYo</button>
+                <button class="menu-btn">Mix</button>
+                <button class="menu-btn">Item</button>
+            </div>
+
+            <!-- video container -->
+            <div id="video-container" class="video-container">
+                <!-- <div class="video">
+                    <div class="thumbnail">
+                        <img src="./assets/Thumbnail-Images.png" alt="">
+                    </div>
+                    <div class="video-text">
+                        <div class="profile-img">
+                            <img src="./assets/Icon1.jpg" alt="">
+                        </div>
+                        <div class="video-title">
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <p id="channel-name">james gouse</p>
+                            <div class="views-div">
+                                <p>15k views</p>
+                                <p>1 week ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
     </div>
-    
 
-    <script src="/script.js"></script>
+
+    <script src="./script.js"></script>
 </body>
+
 </html>

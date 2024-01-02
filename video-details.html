@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video-youtube</title>
+    <link rel="stylesheet" href="./video-details.css">
+</head>
+
+<body>
+    <!-- navbar section -->
+    <nav class="navbar">
+        <img src="./Assets/Yt-Button.svg" alt="youtube-logo">
+        <div class="search-container">
+            <div class="search-div">
+                <input id="search" type="text" placeholder="Search">
+                <img src="./Assets/SearchBox-Button.png" alt="">
+            </div>
+            <div class="mice">
+                <img src="./Assets/mice-icon.png" alt="">
+            </div>
+        </div>
+
+        <div class="profile-section">
+            <img src="./Assets/Create.png" alt="Create">
+            <img src="./Assets/Apps.png" alt="Apps">
+            <img src="./Assets/Notifications.png" alt="Notifications">
+            <img src="./Assets/Profile.png" alt="Profile">
+        </div>
+    </nav>
+    <!-- body section of video page -->
+    <div class="container">
+        <!--play video div -->
+        <div class="left-part">
+            <div class="play-video">
+                <img src="./Assets/video-page-assets/yt thumbnail.png" alt="">
+                <div class="video-details">
+                    <h3 class="video-title">Blind Woodturner: Turning passion into fine art</h3>
+                    <div class="video-views-row">
+                        <p class="views-count">576,969 views . Oct 8, 2021</p>
+                        <p class="date-published"></p>
+                        <div class="like-dislike-row">
+                            <span><img src="./Assets/video-page-assets/like.png" alt="">
+                                <p>1.7K</p>
+                            </span>
+                            <span><img src="./Assets/video-page-assets/dislike.png" alt="">
+                                <p>632</p>
+                            </span>
+                            <span><img src="./Assets/video-page-assets/share.png" alt="">
+                                <p>SHARE</p>
+                            </span>
+                            <span><img src="./Assets/video-page-assets/save btn.png" alt="">
+                                <p>SAVE</p>
+                            </span>
+                            <img src="./Assets/video-page-assets/three dots horizontal.png" alt="">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- channel description details -->
+            <div class="channel-description">
+                <div class="channel-logo">
+                    <div class="right-part">
+                        <img src="./Assets/Icon2.jpg" alt="">
+                        <div>
+                            <h4 class="channel-name">Marcus Levin</h4>
+                            <p id="subs-count">1.2M subscribers</p>
+                        </div>
+                    </div>
+                    <div class="left-part">
+                        <button id="subscribe" type="submit">SUBSCRIBE</button>
+                    </div>
+                </div>
+                <div class="description">
+                    <!-- <p id="description">Chris Fisher, also known as the Blind Woodturner, learned his craft by listening
+                        to
+                        hundreds of hours of YouTube videos and experimenting in his workshop. Now he’s a YouTube
+                        creator
+                        himself, sells his products worldwide, and does demonstrations all around the country.</p> -->
+                </div>
+            </div>
+            <!-- comment container -->
+            <div class="comment-container">
+
+                <div class="total-comments">
+                    <p id="cooments-count">286 Comments</p>
+                    <div class="sortby-div">
+                        <img src="./Assets/video-page-assets/Dropdown.png" alt="">
+                        <h4>SORT BY</h4>
+                    </div>
+                </div>
+                <div class="input-comment">
+                    <img src="./Assets/User-Avatar2.jpg" alt="">
+                    <div class="enter-comment"></div>
+                    <input id="enter-comment" type="text" placeholder="Add a public comment">
+                </div>
+                <div class="comment">
+                    <div class="commented-logo">
+                        <img src="./Assets/User-Avatar.jpg" alt="">
+                    </div>
+                    <div class="commented-details">
+                        <div class="commented-channel-name">
+                            <h5 id="commented-channel-name">James Gouse</h5>
+                            <p id="commented-time">8 hours ago</p>
+                        </div>
+                        <div id="comment-text">
+                            Wow, world is full of different skills
+                        </div>
+                        <div class="like-dislike">
+                            <img src="./Assets/video-page-assets/like.png" alt="">
+                            <p id="like-count">3</p>
+                            <img src="./Assets/video-page-assets/dislike.png" alt="">
+                            <button id="reply">REPLY</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- video-list div-->
+         <div class="list-container"> 
+            <div class="list-buttons">
+                <button class="list-btn btn-1">ALL</button>
+                <button class="list-btn btn-2">From Marcus Levin</button>
+            </div>
+            <div class="video-in-list">
+                <div class="thumbnails-list">
+                    <img class="" src="./Assets/video-page-assets/Thumbnail-Images.png" alt="">
+                </div>
+                <div class="list-video-details">
+                    <h4>Ep 6: Living to Serve | SEARCH ON</h4>
+                    <p id="channel-name">James Gouse</p>
+                    <div class="list-video-views">
+                        <p class="">1M views . 3 years ago</p>
+                        <p class="list-video-published"></p>
+                    </div>
+                </div>
+            </div>
+        </div> 
+
+    </div>
+<!-- <script src="./script.js"></script> -->
+</body>
+
+</html>
